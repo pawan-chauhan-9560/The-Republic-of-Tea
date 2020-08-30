@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada&display=swap");
+:root {
+  --brightYellow: #e3b505;
+  --darkBrown: #bb9457;
+  --yellow: rgb(242, 180, 80);
+  --brown: #382923;
+  --black: #000;
+  --grey: #a9b2ac;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lemonada";
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../img/back.jpg");
+  background-size: cover;
+  color: var(--darkBrown);
+}
+/* Header */
+.header {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 80%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  .header {
+    background: url("../img/headBack.webp") center/cover fixed;
+    /* background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+  }
+}
+.banner {
+  text-align: center;
+  z-index: 3;
+}
+.banner_title {
+  font-size: 3rem;
+}
+@media screen and (min-width: 600px) {
+  .banner_title {
+    font-size: 4rem;
+  }
+}
+.banner_social-icon {
+  display: block;
+  text-decoration: none;
+  color: var(--brown);
+  border: 0.1rem solid var(--black);
+  border-radius: 50%;
+  padding: 0.25rem;
+  transition: all 0.4s linear;
+}
+.banner_social-icon:hover {
+  background: var(--brightYellow);
+  color: var(--brown);
+}
+.banner_icons {
+  width: 50%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 2rem);
+  grid-column-gap: 0.5rem;
+  justify-content: center;
+}
