@@ -29,7 +29,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: whitesmoke;
+  background: #f2f2f2;
   z-index: 888;
   display: grid;
   justify-content: center;
@@ -131,7 +131,7 @@ body {
   top: 0%;
   right: 0%;
   height: 100%;
-  width: 10rem;
+
   background: rgba(255, 180, 80, 0.9);
   z-index: 3;
   margin-right: 88%;
@@ -148,10 +148,20 @@ body {
   padding: 0.5rem 1rem;
   transition: all 0.5s ease-in-out;
 }
-.nav_single_link:hover {
+/* .nav_single_link:hover {
   background: #05ff7e;
   padding-left: 1rem;
+} */
+/* nav */
+.nav {
+  width: 0;
+  overflow: hidden;
+  transition: all 0.5s linear;
 }
+.nav--show {
+  width: 10rem;
+}
+
 /* Video Btn */
 .videoBtn-Container {
   display: none;
@@ -183,5 +193,9 @@ body {
     width: 50%;
     background: var(--brown);
     border-radius: 0.5rem;
+    transition: all 0.5s ease-in-out;
+  }
+  .btnSlide{
+    left:50%
   }
 }
