@@ -22,6 +22,30 @@ body {
   background-size: cover;
   color: var(--darkBrown);
 }
+
+/* Global Style */
+.bell-fonts {
+  font-family: "la belle Aurore", cursive;
+}
+/* Section padding */
+.section-padding {
+  padding: 3rem 0;
+}
+
+/* Grid conatiner */
+.grid-container {
+  max-width: 90vw;
+  margin: 2rem auto;
+  display: grid;
+  grid-row-gap: 2rem;
+}
+@media screen and (min-width: 768) {
+  .grid-container--medium-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /* Preloader */
 .preLoader {
   position: fixed;
@@ -195,7 +219,13 @@ body {
     border-radius: 0.5rem;
     transition: all 0.5s ease-in-out;
   }
-  .btnSlide{
-    left:50%
+  .btnSlide {
+    left: 50%;
   }
+}
+
+/* about */
+.about_img_item {
+  width: 100%;
+  display: block;
 }
