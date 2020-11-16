@@ -199,10 +199,55 @@ body {
   padding: 0.5rem 1rem;
   transition: all 0.5s ease-in-out;
 }
-/* .nav_single_link:hover {
-  background: #05ff7e;
-  padding-left: 1rem;
-} */
+.nav_single_link:hover {
+  background: var(--brown);
+  color: rgba(242, 180, 80, 0.9);
+  padding-left: 1.5rem;
+}
+/* logo */
+.log {
+  width: 100%;
+}
+
+.nav_logo .log:hover,
+.nav_logo .log:focus,
+.nav_logo .log:active {
+  -webkit-animation-name: buzz;
+  animation-name: buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes buzz {
+  50% {
+    -ms-transform: translateX(3px) rotate(2deg);
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -ms-transform: translateX(-3px) rotate(-2deg);
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+@keyframes buzz {
+  50% {
+    -ms-transform: translateX(3px) rotate(2deg);
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -ms-transform: translateX(-3px) rotate(-2deg);
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+/* Logo ENd */
+
 /* nav */
 .nav {
   width: 0;
